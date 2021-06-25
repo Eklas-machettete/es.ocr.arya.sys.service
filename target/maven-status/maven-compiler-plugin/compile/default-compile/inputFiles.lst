@@ -1,0 +1,16 @@
+C:\Israel\workspace\es.geofoliaetl.qubist.prc.service\src\main\java\com\geofoliaetl\TransferApplication.java
+C:\Israel\workspace\es.geofoliaetl.qubist.prc.service\src\main\java\com\geofoliaetl\services\TransferService.java
+C:\Israel\workspace\es.geofoliaetl.qubist.prc.service\src\main\java\com\geofoliaetl\repositories\FamilyCatalogRepository.java
+C:\Israel\workspace\es.geofoliaetl.qubist.prc.service\src\main\java\com\geofoliaetl\controllers\TransferController.java
+C:\Israel\workspace\es.geofoliaetl.qubist.prc.service\src\main\java\com\geofoliaetl\exceptions\ExceptionAdvice.java
+C:\Israel\workspace\es.geofoliaetl.qubist.prc.service\src\main\java\com\geofoliaetl\model\RFile.java
+C:\Israel\workspace\es.geofoliaetl.qubist.prc.service\src\main\java\com\geofoliaetl\entities\Transfer.java
+C:\Israel\workspace\es.geofoliaetl.qubist.prc.service\src\main\java\com\geofoliaetl\configuration\SwaggerConfiguration.java
+C:\Israel\workspace\es.geofoliaetl.qubist.prc.service\src\main\java\com\geofoliaetl\entities\HaCatalog.java
+C:\Israel\workspace\es.geofoliaetl.qubist.prc.service\src\main\java\com\geofoliaetl\repositories\TransferRepository.java
+C:\Israel\workspace\es.geofoliaetl.qubist.prc.service\src\main\java\com\geofoliaetl\repositories\HaCatalogRepository.java
+C:\Israel\workspace\es.geofoliaetl.qubist.prc.service\src\main\java\com\geofoliaetl\entities\FamilyCatalog.java
+C:\Israel\workspace\es.geofoliaetl.qubist.prc.service\src\main\java\com\geofoliaetl\services\HaCatalogService.java
+C:\Israel\workspace\es.geofoliaetl.qubist.prc.service\src\main\java\com\geofoliaetl\exceptions\CustomErrorResponse.java
+C:\Israel\workspace\es.geofoliaetl.qubist.prc.service\src\main\java\com\geofoliaetl\services\IHaCatalogService.java
+C:\Israel\workspace\es.geofoliaetl.qubist.prc.service\src\main\java\com\geofoliaetl\model\Reponse.java
