@@ -11,12 +11,15 @@ import java.util.UUID;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -33,10 +36,17 @@ import com.ocr.model.Invoices;
 import com.ocr.model.Reponse;
 import com.ocr.repositories.CallbackRepository;
 import com.ocr.services.DigitalService;
+import com.ocr.services.EventService;
 
 
 @Controller
 public class OcrController {
+	//@Value("${server.servlet.context-path}")
+	String serviceUri="";
+	
+	@Value("${ocr.host}")
+	String ocrHost;
+	
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(OcrController.class);
 
@@ -47,7 +57,8 @@ public class OcrController {
     
     @Autowired
     CallbackRepository callbackRepository;
-
+	@Autowired
+	EventService eventService;
 
     @PostMapping(path = "/files", consumes = "application/json", produces = "application/json")
 	@ResponseBody
@@ -67,33 +78,13 @@ public class OcrController {
         return new ResponseEntity<Reponse>(resp, HttpStatus.OK);
     }
     
-
+    
     @PostMapping(path = "/callback", consumes = "application/json", produces = "application/json")
 	@ResponseBody
 	public ResponseEntity<Reponse> processFiles(@RequestBody Event event) throws InvalidKeyException, IOException, ParseException {
-    	Reponse resp = new Reponse();
-    	Invoice invoice = new Invoice();
-    	Invoices invoices = new Invoices();
-        RestTemplate restTemplate = new RestTemplate();
-    	Callback callback = callbackRepository.findByfileName(event.getSubject()).get(0);
-    	if(event.getBody().equals("SUCCESS"))
-        	invoice = digitalService.getFilesProcessed(event.getSubject());
-    	else
-    		invoice.setFileName(event.getSubject());
-		resp.setRegistros_procesados(invoice);
-
-        HttpHeaders headers = new HttpHeaders();
-        headers.setContentType(MediaType.APPLICATION_JSON);
-        ArrayList<Invoice> array_invoices = new ArrayList<>();
-        array_invoices.add(invoice);
-        invoices.setOwner(callback.getOwner());
-        invoices.setInvoices(array_invoices);
-        HttpEntity<Invoices> request = new HttpEntity<Invoices>(invoices, headers); 
-        String resultAsJsonStr = restTemplate.postForObject(callback.getCallbackUrl(), request, String.class);
-        callbackRepository.delete(callback);
-        
-        return new ResponseEntity<Reponse>(resp, HttpStatus.OK);
+      return eventService.processFiles(event);
     }
+    
     
     @PostMapping(value = "/drive", produces = {MediaType.APPLICATION_JSON_VALUE})
 	@ResponseBody
@@ -101,5 +92,18 @@ public class OcrController {
 		
 		return new ResponseEntity<String>("Complete", HttpStatus.OK);
 	}
+    
+    
+    @GetMapping(path ="/endpoint")
+   	@ResponseBody
+   	public  synchronized ResponseEntity<String> endpoint() throws InvalidKeyException, IOException, ParseException {
+       
+           String endpoint=ocrHost+serviceUri+"/callback";
+           return new ResponseEntity<String>(endpoint, HttpStatus.OK);
+       }
+    
+    
+    
+    
     
 }
