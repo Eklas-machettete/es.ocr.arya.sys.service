@@ -33,7 +33,7 @@ public class EventService {
     	Invoice invoice = new Invoice();
     	Invoices invoices = new Invoices();
         RestTemplate restTemplate = new RestTemplate();
-        System.out.println(event.getBody()+" ------------------ "+event.getSubject());
+        //System.out.println(event.getBody()+" ------------------ "+event.getSubject());
     	Callback callback = callbackRepository.findByfileName(event.getSubject()).get(0);
     	
     	if(event.getBody().equals("SUCCESS"))

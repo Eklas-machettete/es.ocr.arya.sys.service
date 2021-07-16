@@ -93,15 +93,7 @@ public class OcrController {
 		return new ResponseEntity<String>("Complete", HttpStatus.OK);
 	}
     
-    
-    @GetMapping(path ="/endpoint")
-   	@ResponseBody
-   	public  synchronized ResponseEntity<String> endpoint() throws InvalidKeyException, IOException, ParseException {
-       
-           String endpoint=ocrHost+serviceUri+"/callback";
-           return new ResponseEntity<String>(endpoint, HttpStatus.OK);
-       }
-    
+   
     
     
     
