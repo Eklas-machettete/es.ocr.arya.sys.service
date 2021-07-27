@@ -1,23 +1,26 @@
-E:\she\Arya_28_Jun\arya_sys\es.ocr.arya.sys.service\src\main\java\com\ocr\model\Reponse.java
-E:\she\Arya_28_Jun\arya_sys\es.ocr.arya.sys.service\src\main\java\com\ocr\entities\Callback.java
-E:\she\Arya_28_Jun\arya_sys\es.ocr.arya.sys.service\src\main\java\com\ocr\model\File.java
-E:\she\Arya_28_Jun\arya_sys\es.ocr.arya.sys.service\src\main\java\com\ocr\repositories\InvoiceRepository.java
-E:\she\Arya_28_Jun\arya_sys\es.ocr.arya.sys.service\src\main\java\com\ocr\repositories\ClassificationRepository.java
-E:\she\Arya_28_Jun\arya_sys\es.ocr.arya.sys.service\src\main\java\com\ocr\model\Invoices.java
-E:\she\Arya_28_Jun\arya_sys\es.ocr.arya.sys.service\src\main\java\com\ocr\services\InvoiceService.java
-E:\she\Arya_28_Jun\arya_sys\es.ocr.arya.sys.service\src\main\java\com\ocr\entities\Invoice.java
-E:\she\Arya_28_Jun\arya_sys\es.ocr.arya.sys.service\src\main\java\com\ocr\controllers\OcrController.java
-E:\she\Arya_28_Jun\arya_sys\es.ocr.arya.sys.service\src\main\java\com\ocr\exceptions\CustomErrorResponse.java
-E:\she\Arya_28_Jun\arya_sys\es.ocr.arya.sys.service\src\main\java\com\ocr\services\IClassificationService.java
-E:\she\Arya_28_Jun\arya_sys\es.ocr.arya.sys.service\src\main\java\com\ocr\services\IInvoiceService.java
-E:\she\Arya_28_Jun\arya_sys\es.ocr.arya.sys.service\src\main\java\com\ocr\services\ClassificationService.java
-E:\she\Arya_28_Jun\arya_sys\es.ocr.arya.sys.service\src\main\java\com\ocr\repositories\CallbackRepository.java
-E:\she\Arya_28_Jun\arya_sys\es.ocr.arya.sys.service\src\main\java\com\ocr\model\Event.java
-E:\she\Arya_28_Jun\arya_sys\es.ocr.arya.sys.service\src\main\java\com\ocr\services\ICallbackService.java
-E:\she\Arya_28_Jun\arya_sys\es.ocr.arya.sys.service\src\main\java\com\ocr\configuration\SwaggerConfiguration.java
-E:\she\Arya_28_Jun\arya_sys\es.ocr.arya.sys.service\src\main\java\com\ocr\model\Files.java
-E:\she\Arya_28_Jun\arya_sys\es.ocr.arya.sys.service\src\main\java\com\ocr\services\CallbackService.java
-E:\she\Arya_28_Jun\arya_sys\es.ocr.arya.sys.service\src\main\java\com\ocr\OcrApplication.java
-E:\she\Arya_28_Jun\arya_sys\es.ocr.arya.sys.service\src\main\java\com\ocr\services\DigitalService.java
-E:\she\Arya_28_Jun\arya_sys\es.ocr.arya.sys.service\src\main\java\com\ocr\entities\Classification.java
-E:\she\Arya_28_Jun\arya_sys\es.ocr.arya.sys.service\src\main\java\com\ocr\exceptions\ExceptionAdvice.java
+E:\dispatcher\OCR\New folder\es.ocr.arya.sys.service\src\main\java\com\ocr\exceptions\CustomErrorResponse.java
+E:\dispatcher\OCR\New folder\es.ocr.arya.sys.service\src\main\java\com\ocr\repositories\InvoiceRepository.java
+E:\dispatcher\OCR\New folder\es.ocr.arya.sys.service\src\main\java\com\ocr\model\Files.java
+E:\dispatcher\OCR\New folder\es.ocr.arya.sys.service\src\main\java\com\ocr\repositories\CallbackRepository.java
+E:\dispatcher\OCR\New folder\es.ocr.arya.sys.service\src\main\java\com\ocr\services\InvoiceService.java
+E:\dispatcher\OCR\New folder\es.ocr.arya.sys.service\src\main\java\com\ocr\entities\Invoice.java
+E:\dispatcher\OCR\New folder\es.ocr.arya.sys.service\src\main\java\com\ocr\services\EventService.java
+E:\dispatcher\OCR\New folder\es.ocr.arya.sys.service\src\main\java\com\ocr\model\File.java
+E:\dispatcher\OCR\New folder\es.ocr.arya.sys.service\src\main\java\com\ocr\entities\Callback.java
+E:\dispatcher\OCR\New folder\es.ocr.arya.sys.service\src\main\java\com\ocr\services\IClassificationService.java
+E:\dispatcher\OCR\New folder\es.ocr.arya.sys.service\src\main\java\com\ocr\services\IInvoiceService.java
+E:\dispatcher\OCR\New folder\es.ocr.arya.sys.service\src\main\java\com\ocr\OcrApplication.java
+E:\dispatcher\OCR\New folder\es.ocr.arya.sys.service\src\main\java\com\ocr\entities\Classification.java
+E:\dispatcher\OCR\New folder\es.ocr.arya.sys.service\src\main\java\com\ocr\services\ClassificationService.java
+E:\dispatcher\OCR\New folder\es.ocr.arya.sys.service\src\main\java\com\ocr\model\Event.java
+E:\dispatcher\OCR\New folder\es.ocr.arya.sys.service\src\main\java\com\ocr\async\AsyncConfig.java
+E:\dispatcher\OCR\New folder\es.ocr.arya.sys.service\src\main\java\com\ocr\services\ICallbackService.java
+E:\dispatcher\OCR\New folder\es.ocr.arya.sys.service\src\main\java\com\ocr\model\Reponse.java
+E:\dispatcher\OCR\New folder\es.ocr.arya.sys.service\src\main\java\com\ocr\services\CallbackService.java
+E:\dispatcher\OCR\New folder\es.ocr.arya.sys.service\src\main\java\com\ocr\services\DigitalService.java
+E:\dispatcher\OCR\New folder\es.ocr.arya.sys.service\src\main\java\com\ocr\repositories\ClassificationRepository.java
+E:\dispatcher\OCR\New folder\es.ocr.arya.sys.service\src\main\java\com\ocr\exceptions\ExceptionAdvice.java
+E:\dispatcher\OCR\New folder\es.ocr.arya.sys.service\src\main\java\com\ocr\async\AsyncExceptionHandler.java
+E:\dispatcher\OCR\New folder\es.ocr.arya.sys.service\src\main\java\com\ocr\controllers\OcrController.java
+E:\dispatcher\OCR\New folder\es.ocr.arya.sys.service\src\main\java\com\ocr\model\Invoices.java
+E:\dispatcher\OCR\New folder\es.ocr.arya.sys.service\src\main\java\com\ocr\configuration\SwaggerConfiguration.java
